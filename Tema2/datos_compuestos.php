@@ -169,7 +169,32 @@ Haz una página PHP que utilice estas funciones para crear una tabla como la del
 
 //Funciones relacionadas con los tipos de datos compuestos 4.3
 
+//Asignando valores directamente, la función array() permite crear un array con una sola línea de código.
 
+$a = array(); // array vacío
+
+$modulos = array("PR" => "Programación", "BD" => "Bases de datos", "LM" => "Lenguaje de marcas", "ED" => "Entorno de desarrollo"); //array numérico
+
+
+// tras haber definido el array, puedes añadir nuevos elementos y modiifcxar los existentes. También puedes se pueden eliminar elemmetos con la función unset()
+
+unset ($modulos [0]); // elimina el elemento con índice 0
+// EL primer elemento pasa a ser $modulos[1] que es "Bases de datos"
+
+
+// array_values() : Devuelve un array con todos los valores de un array, pero sin las claves asociadas.
+
+// is_array() : Devuelve true si encuentra el elelmto en el array y false en caso contrario.
+
+$modulos = array("porgramación","Bases de datos","Lenguaje de marcas","Entorno de desarrollo");
+
+$modulo = "Bases de datos";
+
+if(in_array($modulo, $modulos)){
+    echo "El módulo $modulo está en el array";
+}else{
+    echo "El módulo $modulo no está en el array";
+}
 
 
 
