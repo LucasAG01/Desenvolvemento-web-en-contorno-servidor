@@ -76,7 +76,8 @@
     echo "<br>";
     var_dump($fecha);
     //Sacar timestamp a un objeto DateTime
-    $ahora = new DateTime();echo "<br> TimeStamp: " . date_timestamp_get($ahora);
+    $ahora = new DateTime();
+    echo "<br> TimeStamp: " . date_timestamp_get($ahora);
     echo "<br>";
 
     //Multiples posibilidades
