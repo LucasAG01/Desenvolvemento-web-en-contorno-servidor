@@ -98,7 +98,7 @@ La primera columna debe contener el nombre de la variable, y la segunda su valor
             echo "<tr>";
             echo "<td>$key</td>";
             echo "<td>$value</td>";
-            echo "</tr>"; // Fixed: was <tr> instead of </tr>
+            echo "</tr>"; 
         }
         ?>
     </tbody>
